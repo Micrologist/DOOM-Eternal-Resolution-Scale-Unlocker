@@ -1,15 +1,15 @@
 C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker.csprojAssemblyReference.cache
 C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\MainWindow.g.cs
 C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\App.g.cs
-C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker_MarkupCompile.cache
-C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker_MarkupCompile.lref
-C:\Users\ATX\source\repos\DE ResScale Unlocker\bin\x64\Debug\DE ResScale Unlocker.exe.config
-C:\Users\ATX\source\repos\DE ResScale Unlocker\bin\x64\Debug\DE ResScale Unlocker.exe
-C:\Users\ATX\source\repos\DE ResScale Unlocker\bin\x64\Debug\DE ResScale Unlocker.pdb
 C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\MainWindow.baml
-C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker.g.resources
 C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE_ResScale_Unlocker.Properties.Resources.resources
 C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker.csproj.GenerateResource.cache
 C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker.csproj.CoreCompileInputs.cache
-C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker.exe
-C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DE ResScale Unlocker.pdb
+C:\Users\ATX\source\repos\DE ResScale Unlocker\bin\x64\Debug\DEResScaleUnlocker.exe.config
+C:\Users\ATX\source\repos\DE ResScale Unlocker\bin\x64\Debug\DEResScaleUnlocker.exe
+C:\Users\ATX\source\repos\DE ResScale Unlocker\bin\x64\Debug\DEResScaleUnlocker.pdb
+C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DEResScaleUnlocker_MarkupCompile.cache
+C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DEResScaleUnlocker_MarkupCompile.lref
+C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DEResScaleUnlocker.g.resources
+C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DEResScaleUnlocker.exe
+C:\Users\ATX\source\repos\DE ResScale Unlocker\obj\x64\Debug\DEResScaleUnlocker.pdb

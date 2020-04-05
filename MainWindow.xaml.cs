@@ -42,6 +42,7 @@ namespace DE_ResScale_Unlocker
 			kbHook.KeyDown += KbHook_KeyDown;
 			kbHook.KeyUp += KbHook_KeyUp;
 			kbHook.HookedKeys.Add(System.Windows.Forms.Keys.F10);
+			minResSettingPtr = IntPtr.Zero;
 		}
 
 
@@ -118,7 +119,9 @@ namespace DE_ResScale_Unlocker
 				return false;
 			SetPointersByModuleSize(process.MainModule.ModuleMemorySize);
 			minResSettingDP.DerefOffsets(process, out minResSettingPtr);
-			scaleSettingsDP.DerefOffsets(process, out scaleSettingsPtr);
+			//scaleSettingsDP.DerefOffsets(process, out scaleSettingsPtr);
+			if (scaleSettingsPtr == IntPtr.Zero)
+				scaleSettingsPtr = GetSettingsPtr() + 16 * 4;
 			return true;
 		}
 
@@ -139,6 +142,15 @@ namespace DE_ResScale_Unlocker
 				System.Windows.Forms.MessageBox.Show("This game version is not supported.", "Unsupported Game Version");
 				process = null;
 			}
+		}
+
+		public IntPtr GetSettingsPtr()
+		{
+			SignatureScanner signatureScanner = new SignatureScanner(process, process.MainModule.BaseAddress, process.MainModule.ModuleMemorySize);
+			SigScanTarget sigScanTarget = new SigScanTarget("41 64 64 65 64 20 74 69 6D 65 20 66 6F 72 20 73 79 73 74 65 6D 20 65 6E 76 69 72 6F 6E 6D 65 6E 74");
+
+			IntPtr targetPtr = signatureScanner.Scan(sigScanTarget);
+			return targetPtr;
 		}
 
 	}
