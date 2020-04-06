@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DE_ResScale_Unlocker"
         mc:Ignorable="d"
-        Title="DE RS Unlocker" Height="139.321" Width="225.579" ResizeMode="CanMinimize">
+        Title="DE RS Unlocker" Height="174.321" Width="225.579" ResizeMode="CanMinimize">
 	<Grid Margin="0,0,0,1">
 		<Button x:Name="buttonTest" Content="Set" HorizontalAlignment="Left" Height="38" Margin="12,49,0,0" VerticalAlignment="Top" Width="193" Click="buttonTest_Click"/>
 		<TextBox x:Name="minTB" HorizontalAlignment="Left" Height="20" Margin="154,21,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" Width="31"/>
 		<Label Content="Minimum Render Scale" HorizontalAlignment="Left" Height="27" Margin="12,17,0,0" VerticalAlignment="Top" Width="137"/>
 		<Label Content="%" HorizontalAlignment="Left" Height="27" Margin="185,17,0,0" VerticalAlignment="Top" Width="20"/>
+		<TextBlock HorizontalAlignment="Left" Height="36" Margin="12,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"><Run Text="Hotkeys"/><LineBreak/><Run Text="F10 - Toggle Render Scale"/></TextBlock>
 
 	</Grid>
 </Window>

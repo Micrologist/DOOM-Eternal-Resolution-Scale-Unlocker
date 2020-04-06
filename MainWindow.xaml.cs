@@ -35,6 +35,7 @@ namespace DE_ResScale_Unlocker
 		float minimumRS = 0.01f;
 
 		float[] onePercentSettings = new float[32] { 1.0f, 0.968f, 0.936f, 0.904f, 0.872f, 0.84f, 0.808f, 0.776f, 0.744f, 0.712f, 0.68f, 0.648f, 0.616f, 0.584f, 0.552f, 0.52f, 0.488f, 0.456f, 0.424f, 0.392f, 0.36f, 0.328f, 0.296f, 0.264f, 0.232f, 0.2f, 0.168f, 0.136f, 0.104f, 0.072f, 0.04f, 0.01f };
+		byte[] onePercentBytes = new byte[32 * 4];
 
 		public MainWindow()
 		{
@@ -43,6 +44,7 @@ namespace DE_ResScale_Unlocker
 			kbHook.KeyUp += KbHook_KeyUp;
 			kbHook.HookedKeys.Add(System.Windows.Forms.Keys.F10);
 			minResSettingPtr = IntPtr.Zero;
+			Buffer.BlockCopy(onePercentSettings, 0, onePercentBytes, 0, onePercentBytes.Length);
 		}
 
 
@@ -150,6 +152,13 @@ namespace DE_ResScale_Unlocker
 			SigScanTarget sigScanTarget = new SigScanTarget("41 64 64 65 64 20 74 69 6D 65 20 66 6F 72 20 73 79 73 74 65 6D 20 65 6E 76 69 72 6F 6E 6D 65 6E 74");
 
 			IntPtr targetPtr = signatureScanner.Scan(sigScanTarget);
+
+			if (targetPtr != IntPtr.Zero)
+				return targetPtr;
+
+			sigScanTarget = new SigScanTarget(onePercentBytes);
+			targetPtr = signatureScanner.Scan(sigScanTarget);
+
 			return targetPtr;
 		}
 
